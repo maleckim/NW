@@ -2,27 +2,41 @@
   width: 65%;
 }
 .inputGroup {
-  width: 40%;
-  height: 20%;
-  margin: 8px auto;
+  width: 100%;
+  padding-top: 1%;
+  min-height: fit-content;
+  height: 15%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 
 .searchButton {
   justify-content: center;
   align-items: center;
-  margin-top: 1%;
+  padding-left: 2%;
 }
 
 .mainDisplay {
   width: 50%;
-  margin: 0 auto;
 }
 
 .searchResults {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+  min-height: 50%;
+}
 
-  
+@media only screen and (max-width: 600px) {
+  .inputGroup {
+    padding-top: 10%;
+  }
+
+  .searchResults {
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
 }

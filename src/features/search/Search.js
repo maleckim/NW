@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { artFetch, selectCount } from "./searchSlice";
 import Button from "@mui/material/Button";
-import Card from '../../components/Card/Card.js';
+import Card from "../../components/Card/Card.js";
 
 import TextField from "@mui/material/TextField";
 import styles from "./Search.module.css";
@@ -13,14 +13,6 @@ export function Search() {
   const [search, setSearch] = useState("");
   const handleChange = (event) => {
     setSearch(event.target.value);
-  };
-
-  const Item = () => {
-    return (
-      <div >
-        <Card data={count} />
-      </div>
-    );
   };
 
   return (
@@ -40,8 +32,10 @@ export function Search() {
             Search
           </Button>
         </div>
-      </div>   
-        <Item />
+      </div>
+      <div className={styles.searchResults}>
+        <Card data={count} />
+      </div>
     </div>
   );
 }
