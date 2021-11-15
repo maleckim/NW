@@ -99,13 +99,3 @@ export function Search() {
     </div>
   );
 }
-
-{
-  /* <TextField
-            fullWidth
-            label="What do you want to see?"
-            className={styles.searchBox}
-            value={search}
-            onChange={handleChange}
-          /> */
-}
