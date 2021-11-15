@@ -54,7 +54,7 @@ export function Search() {
         >
           <h1>
             Get started by searching the galleries database with either a phrase
-            or keyword
+            or keyword.
           </h1>
         </Paper>
       );
