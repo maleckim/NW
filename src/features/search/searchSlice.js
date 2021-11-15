@@ -27,6 +27,10 @@ export const searchSlice = createSlice({
       .addCase(artFetch.pending, (state) => {
         state.status = "loading";
       })
+      .addCase(artFetch.rejected, (state) => {
+        state.value = false;
+        state.status = "idle";
+      })
       .addCase(artFetch.fulfilled, (state, action) => {
         state.status = "idle";
         state.value = action.payload;
