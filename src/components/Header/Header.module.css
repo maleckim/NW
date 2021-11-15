@@ -1,0 +1,25 @@
+.heading {
+  height: 12%;
+  width: 100%;
+  background-color: #e4002b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.title {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.imgContainer {
+  height: 50%;
+  width: 20%;
+  align-items: center;
+}
+
+.imgContainer img {
+  height: 100%;
+}

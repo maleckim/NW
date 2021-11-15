@@ -79,8 +79,8 @@ export function Search() {
           >
             <InputBase
               sx={{ ml: 1, flex: 1 }}
-              placeholder="Search for art"
-              inputProps={{ "aria-label": "Search for art" }}
+              placeholder="Search for art by keyword"
+              inputProps={{ "aria-label": "Search for art by keyword" }}
               value={search}
               onChange={(e) => handleChange(e)}
             />
