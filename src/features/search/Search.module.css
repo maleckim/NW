@@ -3,7 +3,8 @@
 }
 .inputGroup {
   width: 40%;
-  margin: 5% auto;
+  height: 20%;
+  margin: 8px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -18,5 +19,10 @@
 
 .mainDisplay {
   width: 50%;
-  margin: 5% auto;
+  margin: 0 auto;
+}
+
+.searchResults {
+
+  
 }

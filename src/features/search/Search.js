@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { artFetch, selectCount } from "./searchSlice";
 import Button from "@mui/material/Button";
+import Card from '../../components/Card/Card.js';
+
 import TextField from "@mui/material/TextField";
 import styles from "./Search.module.css";
 
@@ -14,15 +16,9 @@ export function Search() {
   };
 
   const Item = () => {
-    const { primaryImage, artistDisplayName, title, creditLine } = count;
-
     return (
-      <div className={styles.mainDisplay}>
-        <h1>
-          {title} {artistDisplayName ? `by ${artistDisplayName}` : ""}
-        </h1>
-        <img height="300px" src={primaryImage} />
-        <h4>{creditLine}</h4>
+      <div >
+        <Card data={count} />
       </div>
     );
   };
@@ -44,10 +40,8 @@ export function Search() {
             Search
           </Button>
         </div>
-      </div>
-      <div>
+      </div>   
         <Item />
-      </div>
     </div>
   );
 }
